@@ -19,7 +19,7 @@ import os
 
 from  scipy  import   stats
 
-fname = 'tran-17k-hosing_echam_temp2_summer.nc'
+fname = 'echam_temp2_summer.nc'
 
 
 dyear = 10
@@ -112,7 +112,7 @@ for i in range(0, nyear, dyear):
 
     fig.tight_layout()
 
-    filename = f'plots/plots_{i+1:03d}.png'
+    filename = f'plots/plots_{i+1:04d}.png'
     # fig.text(0.45,0.95, 'year='+str(i), fontsize=20)
     plt.savefig(filename,bbox_inches='tight',)
     plt.close()  # Close the figure to save memory
@@ -195,7 +195,7 @@ for i in range(0, nyear, dyear):
 
     fig.tight_layout()
 
-    filename = f'plots/plots_{i+1:03d}_anomaly.png'   ############## define !!!
+    filename = f'plots/plots_{i+1:04d}_anomaly.png'   ############## define !!!
     # fig.text(0.45,0.95, 'year='+str(i), fontsize=20)
     plt.savefig(filename,bbox_inches='tight',)
     plt.close()  # Close the figure to save memory
